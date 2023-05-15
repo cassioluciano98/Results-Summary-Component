@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+section.your-result{
+    margin: 0 auto;
+    max-width: 800px;
+    height: 650px;
+    padding-top: 10%;
+    background-color: white;
+}
+
+section.your-result .container{
+    width: 620px;
+    margin: 0 auto;
+    border: hidden;
+    box-shadow: 5px 25px 30px 1px #e7e7e7;
+    border-radius: 25px;
+    
+}
+
+section.your-result .container .container-result{
+    float: left;
+    background-color: #7248fd;
+    background-image: linear-gradient( #7248fd, #3815b5);
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+section.your-result .container-result h3{
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: rgba(250, 250, 250, 0.7)
+}
+
+section.your-result .container-result .result{
+    background-color: rgba(54, 13, 203, 0.1);
+    background-image: linear-gradient( rgba(54, 13, 203, 1),  rgb(96, 53, 255, 0.1));
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+section.your-result .result h1{
+    padding-top: 30px;
+    color: white;
+    font-size: 50px;
+}
+
+section.your-result .result p{
+    color: rgba(250, 250, 250, 0.7)
+}
+
+section.your-result .container-result h1{
+    padding-top: 30px;
+    color: white;
+}
+
+section.your-result .container-result p{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 15px;
+    color: rgba(250, 250, 250, 0.7)
+}
+
+section.your-result .container .container-summary{
+    float: right;
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    border-radius: 0 25px 25px 0px;
+    padding-left: 20px;
+}
+
+section.your-result .container-summary h3{
+    padding-top: 30px;
+}
+
+section.your-result .container-summary .reaction,.memory,.verbal,.visual{
+    max-width: 350px;
+    width: 95%;
+    display: flex;
+    padding: 15px 15%;
+    margin-top: 10px;
+    border-radius: 10px;
+    white-space: pre;
+}
+
+.reaction{
+    background-image: url("assets/images/icon-reaction.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-color: #fff6f5;
+    color: red;
+}
+
+.memory{
+    background-image: url("assets/images/icon-memory.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-color: #fffbf2;
+    color: orange;
+}
+
+.verbal{
+    background-image: url("assets/images/icon-verbal.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-color: #f2fbfa;
+    color: #04c804;
+}
+
+.visual{
+    background-image: url("assets/images/icon-visual.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-color: #f3f3fd;
+    color: blue;
+}
+
+section.your-result .container-summary p{
+    position: relative;
+    left: 50%;
+    color: black;
+    font-weight: bolder;
+}
+
+section.your-result .container-summary h5{
+    position: relative;
+    left: 52%;
+    color: rgba(130, 130, 130, 0.7)
+}
+
+section.your-result .container-summary button{
+    width: 80%;
+    max-width: 300px;
+    padding: 15px 0;
+    background-color: #303b59;
+    border-radius: 50px;
+    border: hidden;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+section.your-result .container-summary button a{
+    text-decoration: none;
+    color: white;
+}
+
+section.your-result .container-summary button:hover{
+    background-color: #4624c1;
+    background-image: linear-gradient( rgb(70, 36, 193),  rgb(93, 50, 246));
+    cursor: pointer;
+}
+
+.attribution{
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 680px){
+
+    section.your-result{
+        padding-top: 0;
+    }
+
+    section.your-result .container{
+        float: none;
+        display: block;
+        max-width: 300px;
+    }
+
+    section.your-result .container .container-result{
+        float: none;
+        border-radius: 0 0 25px 25px;
+    }
+
+    section.your-result .container .container-summary button{
+        position: relative;
+        left: 20px;
+        top: 15px;
+    }
+
+    .attribution{
+        display: inline-block;
+        padding-top: 30px;
+        padding-left: 10%;        
+    }
+
+}
